@@ -1,3 +1,16 @@
+* {
+  box-sizing: border-box;
+  outline: none !important;
+}
+
+h3 {
+  padding: 1rem 0;
+}
+
 main {
   min-height: 80vh;
+}
+
+.rating {
+  margin: 0.1rem;
 }

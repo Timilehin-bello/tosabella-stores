@@ -8,8 +8,8 @@ function HomePage() {
     <div>
       <h1>Latest Product</h1>
       <Row>
-        {products.map((product) => (
-          <Col sm={12} md={6} lg={4} xl={3}>
+        {products.map((product, i) => (
+          <Col sm={12} md={6} lg={4} xl={3} key={product._id}>
             <Product product={product} />
           </Col>
         ))}
