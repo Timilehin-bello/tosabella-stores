@@ -1,0 +1,22 @@
+{
+  "name": "tosabella-stores",
+  "version": "1.0.0",
+  "description": "MERN E-commerce store",
+  "main": "server.js",
+  "scripts": {
+    "start": "node back-end/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Timilehin-bello/tosabella-stores.git"
+  },
+  "author": "Bello Oluwatimilehin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Timilehin-bello/tosabella-stores/issues"
+  },
+  "homepage": "https://github.com/Timilehin-bello/tosabella-stores#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
