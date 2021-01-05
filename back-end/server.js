@@ -1,6 +1,8 @@
 const express = require("express");
+const dotenv = require("dotenv");
 const products = require("./data/products");
 
+dotenv.config();
 const app = express();
 
 app.get("/", (req, res) => {
@@ -16,4 +18,9 @@ app.get("/api/products/:id", (req, res) => {
   res.json(product);
 });
 
-app.listen(8080, console.log("Server is running on port 8080"));
+const PORT = process.env.PORT || 8080;
+
+app.listen(
+  PORT,
+  console.log(`Server is running in ${process.env.NODE_ENV} on port ${PORT}`)
+);
