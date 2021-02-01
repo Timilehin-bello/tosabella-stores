@@ -15,7 +15,7 @@ const app = express();
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send("API is currently running");
+  res.send("API is currently running...");
 });
 
 app.use("/api/products", productRoutes);
