@@ -21,7 +21,7 @@ function LoginPage({ location, history }) {
 
   useEffect(() => {
     if (userInfo) {
-      history.pushState(redirect);
+      history.push(redirect);
     }
   }, [history, redirect, userInfo]);
 
